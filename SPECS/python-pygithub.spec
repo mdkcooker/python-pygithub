@@ -24,7 +24,6 @@ etc.) from Python scripts.
 CFLAGS="%{optflags}" %{__python} setup.py build
 
 %install
-rm -rf %{buildroot}
 %{__python} setup.py install --skip-build --root $RPM_BUILD_ROOT
 
 %files
