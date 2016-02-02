@@ -2,7 +2,7 @@
 
 Name:           python-pygithub
 Version:        1.17.0
-Release:        %mkrel 7
+Release:        %mkrel 8
 Summary:        Use the full Github API v3
 Group:          Development/Python
 License:        LGPL
