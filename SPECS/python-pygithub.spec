@@ -2,12 +2,13 @@
 
 Name:           python-pygithub
 Version:        1.26.0
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        Use the full Github API v3
 Group:          Development/Python
 License:        LGPLv3+
 URL:            https://pypi.python.org/pypi/PyGithub
 Source0:        https://pypi.python.org/packages/source/P/PyGithub/%{upstream_name}-%{version}.tar.gz
+Patch0:         0001-fix-wrong-expectance-on-requestJsonAndCheck-returnin.patch
 BuildArch:      noarch
 BuildRequires:  pkgconfig(python2)
 BuildRequires:  pythonegg(2)(setuptools)
@@ -33,6 +34,7 @@ This is the Python 3 version of the package.
 
 %prep
 %setup -q -n %{upstream_name}-%{version}
+%patch0 -p1
 
 # Remove bundled egg-info
 rm -rf %{upstream_name}.egg-info
