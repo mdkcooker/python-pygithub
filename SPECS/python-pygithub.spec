@@ -1,8 +1,8 @@
 %define oname   PyGithub
 
 Name:           python-pygithub
-Version:        1.27.1
-Release:        %mkrel 1
+Version:        1.29
+Release:        1
 Summary:        Use the full Github API v3
 Group:          Development/Python
 License:        LGPLv3+
