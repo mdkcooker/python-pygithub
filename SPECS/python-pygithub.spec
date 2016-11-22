@@ -10,7 +10,7 @@ URL:            https://pypi.python.org/pypi/%{oname}
 Source0:        https://github.com/%{oname}/%{oname}/archive/v%{version}/%{oname}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  pkgconfig(python2)
-BuildRequires:  pythonegg(2)(setuptools)
+BuildRequires:  pythonegg(setuptools)
 
 %description
 %{oname} is a Python (2 and 3) library to use the Github API v3. With it, you
@@ -22,7 +22,7 @@ Summary:        Use the full Github API v3
 Group:          Development/Python
 BuildArch:      noarch
 BuildRequires:  pkgconfig(python3)
-BuildRequires:  pythonegg(3)(setuptools)
+BuildRequires:  python3egg(setuptools)
 
 %description -n python3-pygithub
 %{oname} is a Python (2 and 3) library to use the Github API v3. With it, you
